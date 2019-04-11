@@ -58,7 +58,7 @@ class _PriceScreenState extends State<PriceScreen> {
     try {
       double data = await CoinData().getCoinData();
       setState(() {
-        //TODO 6: For bonus points, use the ternary operator to display a '?' while we're waiting for the result to come back.
+        //TODO 7: For bonus points, use the ternary operator to display a '?' while we're waiting for the result to come back.
         bitcoinValue = data.toStringAsFixed(0);
       });
     } catch (e) {
